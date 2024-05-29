@@ -14,7 +14,7 @@ mail_settings = {
     'MAIL_PASSWORD' : senha
 }
 
-app.config.uptade(mail_settings)
+app.config.update(mail_settings)
 mail = Mail(app)
 
 class Contato():
@@ -40,7 +40,7 @@ def send():
         msg = Message(
             subject = f'{formContato.nome} te enviou um email no portifólio',
             sender = app.config.get('MAIL_USERNAME'),
-            recipients = ['supertetomen@gmail.com', app.config.ger('MAIL_USERNAME')],
+            recipients = ['supertetomen@gmail.com', app.config.get('MAIL_USERNAME')],
             body = f'''
             
             {formContato.nome} com o e-mail {formContato.email}, te enviou a seguinte mensagem: {formContato.mensagem}'
