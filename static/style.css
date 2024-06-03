@@ -10,58 +10,68 @@ body {
 }
 
 #header {
-    position: fixed;
-    top: 0;
+    position: static;
+    /* top: 0;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     background: #010812;
     overflow-y: auto;
-    width: 300px;
+    width: 100%;
     transition: all ease-in-out 0.2s;
     padding: 0 15px;
     z-index: 9997;
 }
 
-#header .profile img {
+/* Quadrinho da foto */
+/* #header .profile img {
     margin: 15px auto;
     display: block;
     width: 120px;
     border: 8px solid #010812;
     border-radius: 0%;
-}
+} */
 
-#header .profile h1 {
+/* Meu nome grande = Nycollas Henich */
+/* #header .profile h1 {
     font-size: 29px;
     margin: 0;
     padding: 0;
     font-weight: 600;
     text-align: center;
     color: #F1F1F1;
-}
+} */
 
-#header .profile .social-links a {
+/* Caixinhas do git e contato */
+/* #header .profile .social-links a {
+    left: 5rem;
     font-size: 1rem;
     background: #212431;
     color: #fff;
-    padding: 0.6rem;
-    margin-right: 1rem;
-    border-radius: 0%;
-    transition: 0.3s;
-    text-decoration: none;
-}
+    padding: 0.5rem;
+    /* margin-right: 1rem; */
+/* border-radius: 0%; */
+/* transition: 0.3s; */
+/* text-decoration: none; */
+/* } */
 
-#header .profile .social-links a:hover {
+/* #header .profile .social-links a:hover {
     background: #113218;
-}
+} */
 
 .nav-menu {
     padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
 }
+
 
 .nav-menu a,
 .nav-menu a:focus {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* margin-right: 10px; */
+    padding: 0;
+    list-style: none;
+    /* align-items: center; */
     color: #a8a9b4;
     transition: 0.3s;
     font-size: 15px;
@@ -70,7 +80,7 @@ body {
 .nav-menu a i,
 .nav-menu a:focus i {
     font-size: 24px;
-    padding-right: 0.8rem;
+    /* padding-right: 0.8rem; */
     color: #6f7180;
 }
 
@@ -89,8 +99,15 @@ body {
     color: #113218
 }
 
+/* getepo */
+.nav-menu li {
+    display: inline-block;
+}
+
+
+
 #main {
-    margin-left: 300px;
+    margin-left: auto;
 }
 
 section#inicio {
@@ -300,18 +317,6 @@ i.menu-mobile {
     right: 30px;
 }
 
-#footer {
-    padding: 15px;
-    color: #fff;
-    font-size: 14px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 300px;
-    z-index: 9999;
-    background-color: #021124;
-    transition: .3s;
-}
 
 @media (max-width: 1012px) {
     #footer {
@@ -319,4 +324,17 @@ i.menu-mobile {
         width: auto;
         padding: 20px 15px;
     }
+}
+
+#footer {
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: red;
+    transition: .3s;
 }
