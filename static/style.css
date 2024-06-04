@@ -8,6 +8,7 @@ body {
     font-family: Bebas Neue;
     width: 100%;
     height: 100%;
+    color: #f1f1f1;
 }
 
 #header {
@@ -99,7 +100,7 @@ body {
 .nav-menu .active,
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
-    /* text-decoration: none; */
+    text-decoration: none;
     color: #fff;
     /* margin-left: 3rem; */
 
@@ -120,10 +121,16 @@ body {
 
 #main {
     margin-left: auto;
+    background-image: url('./imgs/luzes-de-neon-gradientes-abstratas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    ;
 }
 
 section#inicio {
-    background-image: url('./imgs/bright-explosion-makeup-powder-dark-background.jpg');
+    background-image: url('./imgs/luzes-de-neon-gradientes-abstratas.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -158,10 +165,11 @@ section#inicio {
     color: #fff;
 } */
 
-i.menu-mobile {
+/* Botão */
+/* i.menu-mobile {
     position: fixed;
     color: #fff;
-    background-color: #021124;
+    background-color: red;
     right: 1rem;
     top: 1rem;
     font-size: 1.5rem;
@@ -173,7 +181,7 @@ i.menu-mobile {
     display: none;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .menu-nav-active {
     overflow: hidden;
@@ -221,15 +229,16 @@ i.menu-mobile {
     border-radius: 0%;
 }
 
-.section-bg {
+/* .section-bg {
     background-color: black;
-}
+
+} */
 
 .cv .cv-title {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: black;
+    color: blue;
 }
 
 .cv .cv-item {
@@ -244,12 +253,12 @@ i.menu-mobile {
     font-weight: 600;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
-    color: #050d18;
+    color: purple;
     margin-bottom: 10px;
 }
 
 .cv .cv-item h5 {
-    background: #e4edf9;
+    background: red;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
@@ -349,6 +358,6 @@ i.menu-mobile {
     bottom: 0;
     width: 100%;
     z-index: 9999;
-    background-color: #04c819;
+    background-color: red;
     transition: .3s;
 }
